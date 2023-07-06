@@ -6,12 +6,19 @@
   color-scheme: light dark;
   color: rgba(0, 0, 0, 0.87);
   background-color: #ffffff;
-
+  font-size: 100%;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -52,6 +59,7 @@ body {
 section {
   padding: 1rem;
   width: 100vw;
+  min-height: 100vh;
 }
 
 section:nth-child(odd) {
@@ -97,13 +105,66 @@ nav > ul {
   gap: 1;
 }
 
-section {
-  height: 100vh;
-}
-
 #home {
   display: flex;
   justify-content: center;
   align-items: start;
   padding-top: 5rem;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 90%; /* Mobile-first design: set this to be suitable for mobile view */
+  margin: 0 auto;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  padding: 2rem;
+  background-color: white;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Then, as screen size increases, adjust layout */
+@media screen and (min-width: 600px) {
+  :root {
+    font-size: 112.5%; /* 1rem will be 18px */
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .card {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    font-size: 112.5%; /* 1rem will be 20px */
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .card {
+    width: 60%;
+  }
 }
