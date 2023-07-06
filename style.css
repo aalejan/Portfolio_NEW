@@ -4,14 +4,49 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1280px;
+
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+section {
+  padding: 1rem;
+  width: 100vw;
+}
+
+section:nth-child(odd) {
+  background-color: black;
+  width: 100vw;
+  color: white;
+}
+
+button {
+  background-color: orangered;
+  padding: 1rem 2rem;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#contact-button {
+  background-color: white;
+  color: black;
+  border: solid 3px orangered;
 }
 
 a {
@@ -23,13 +58,6 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0 auto; /* Center the body horizontally */
-  max-width: 1280px; /* Set the maximum width of the body */
-  padding: 0 2rem;
-  min-width: 320px;
-  min-height: 100vh;
-}
 h1 {
   font-size: 3.2rem;
 }
@@ -58,4 +86,11 @@ nav > ul {
 
 section {
   height: 100vh;
+}
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 5rem;
 }
