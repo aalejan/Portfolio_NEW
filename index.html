@@ -166,7 +166,41 @@
     </section>
     <section id="contact">
       <h2>Contact Me</h2>
-      <!-- Add your contact details here -->
+      <form id="contactForm">
+        <label for="fname">First Name</label><br />
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="Your first name.."
+        /><br />
+
+        <label for="lname">Last Name</label><br />
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="Your last name.."
+        /><br />
+
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email.."
+        /><br />
+
+        <label for="message">Message</label><br />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your message.."
+        ></textarea
+        ><br />
+
+        <input type="submit" value="Submit" />
+      </form>
     </section>
     <script type="module" src="/main.js"></script>
   </body>
