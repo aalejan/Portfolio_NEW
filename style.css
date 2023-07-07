@@ -125,19 +125,66 @@ nav > ul {
 }
 
 .card {
-  color: black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  color: #333;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1), 0 15px 15px rgba(0, 0, 0, 0.07);
   transition: 0.3s;
-  width: 90%; /* Mobile-first design: set this to be suitable for mobile view */
-  margin: 0 auto;
+  width: 80%;
   font-size: 0.8rem;
-  border-radius: 5px;
+  margin: auto;
+  border-radius: 20px;
   padding: 2rem;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15), 0 25px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card h4,
+.card p,
+.card ul {
+  color: rgba(255, 255, 255, 0.8); /* white text with some transparency */
+}
+.card h2,
+.card h3 {
+  color: orangered;
+}
+
+.project-card {
+  color: #333;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1), 0 15px 15px rgba(0, 0, 0, 0.07);
+  transition: 0.3s;
+  width: 65%;
+  font-size: 0.8rem;
+  margin: auto;
+  border-radius: 20px;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.project-card:hover {
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15), 0 25px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  color: rgba(255, 255, 255, 0.8); /* white text with some transparency */
+}
+
+.project-card a.button {
+  color: white;
+  border: 2px solid orangered;
+  display: block;
+  margin: 1rem auto 0;
 }
 
 /* Then, as screen size increases, adjust layout */
