@@ -155,7 +155,7 @@ nav > ul {
   color: #333;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1), 0 15px 15px rgba(0, 0, 0, 0.07);
   transition: 0.3s;
-  width: 65%;
+  width: 80%;
   font-size: 0.8rem;
   margin: auto;
   border-radius: 20px;
@@ -177,7 +177,7 @@ nav > ul {
 }
 
 .project-card p {
-  color: rgba(255, 255, 255, 0.8); /* white text with some transparency */
+  color: black; /* white text with some transparency */
 }
 
 .project-card a.button {
@@ -200,6 +200,9 @@ nav > ul {
   .card {
     width: 75%;
   }
+  .project-card {
+    width: 72.5%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -213,5 +216,9 @@ nav > ul {
 
   .card {
     width: 60%;
+  }
+
+  .project-card {
+    width: 65%;
   }
 }
