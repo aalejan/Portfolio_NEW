@@ -21,6 +21,10 @@ html {
   scroll-behavior: smooth;
 }
 
+header {
+  width: 100vw;
+}
+
 body {
   margin: 0;
   padding: 0;
