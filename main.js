@@ -1,6 +1,15 @@
 import "./style.css";
 import emailJs from "emailjs-com";
 
+const burger = document.querySelector(".burger");
+const nav = document.querySelector(".nav-links");
+
+burger.addEventListener("click", () => {
+  // Toggle Nav
+  nav.classList.toggle("nav-active");
+  burger.classList.toggle("toggle");
+});
+
 document
   .getElementById("contactForm")
   .addEventListener("submit", function (event) {
