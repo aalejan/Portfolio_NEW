@@ -136,6 +136,12 @@ nav > ul {
   padding-top: 5rem;
 }
 
+.github-icon {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .tech-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
