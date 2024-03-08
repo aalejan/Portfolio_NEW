@@ -219,12 +219,19 @@ nav > ul {
 }
 
 .skill-card {
-  background: #ffffff; /* Adjust color as needed */
-  border: 1px solid #e1e1e1; /* Light grey border */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  border-radius: 8px; /* Rounded corners */
-  padding: 20px;
+  background: #ffffff; /* White background for a clean look */
+  border: 1px solid #e1e1e1; /* Light grey border for subtle definition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  border-radius: 12px; /* Increased radius for modern rounded corners */
+  padding: 1.5rem; /* Generous padding for a spacious layout */
   width: 300px; /* Adjust width as needed */
+  margin: 0 auto; /* Center cards */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transitions for hover effects */
+}
+
+.skill-card:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow for lifted effect */
 }
 
 .skill-card h3 {
